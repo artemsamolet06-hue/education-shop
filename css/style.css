@@ -1,0 +1,15 @@
+.Sun {
+    position: relative;
+    top: -55px;
+}
+.search-wrapper {
+  display: flex;
+  justify-content: center; /* Центрирует по горизонтали */
+  align-items: center;     /* Центрирует по вертикали (нужна высота) */
+  height: -10px;  
+  margin: -50px auto 0;         /* Высота контейнера, которую вы хотели */
+}
+
+.poisk {
+  width: 300px; /* Задайте нужную ширину */
+}
