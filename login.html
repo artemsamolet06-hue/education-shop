@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Games - Вход</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__container">
+        <a href="index.html" class="header__logo">
+            <img src="images/logo.webp" alt="Steam">
+        </a>
+        
+        <input type="checkbox" id="burger-toggle" class="header__burger-checkbox">
+        <label for="burger-toggle" class="header__burger">☰</label>
+        
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="index.html" class="header__nav-link" >Магазин</a></li>
+                <li><a href="catalog.html" class="header__nav-link">Каталог</a></li>
+                <li><a href="profile.html" class="header__nav-link">Профиль</a></li>
+                <li><a href="admin.html" class="header__nav-link">Админка</a></li>
+                <li><a href="index.html" class="header__nav-link">Поиск</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header__actions" style="display: flex; align-items: center; gap: 12px;">
+            <a href="login.html" class="header__login-btn">Войти</a>
+            <a href="register.html" class="header__register-btn">Создать аккаунт</a>
+        </div>
+    </div>
+</header>
+<main>
+<section class="section" style="padding-top: 100px; padding-bottom: 100px;">
+<div style="max-width: 420px; margin: 0 auto; background-color: var(--card-bg); padding: 40px; border-radius: 8px;">
+<h1 style="text-align: center; margin-bottom: 30px; font-size: 32px;">Вход в аккаунт</h1>
+<form>
+<div style="margin-bottom: 20px;">
+<label style="display: block; margin-bottom: 8px; font-size: 14px;">Электронная почта</label>
+<input type="email" style="width: 100%; padding: 14px; border: 1px solid var(--border-color); border-radius: 4px; background-color: #fff; color: #000;" placeholder="example@steam.ru" required>
+</div>
+<div style="margin-bottom: 20px;">
+<label style="display: block; margin-bottom: 8px; font-size: 14px;">Пароль</label>
+<input type="password" style="width: 100%; padding: 14px; border: 1px solid var(--border-color); border-radius: 4px; background-color: #fff; color: #000;" placeholder="••••••••" required>
+</div>
+<button type="submit" style="width: 100%; padding: 14px; background-color: var(--accent-color); color: #fff; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">Войти</button>
+</form>
+<p style="text-align: center; margin-top: 25px;">Нет аккаунта? <a href="register.html" style="color: var(--accent-color);">Зарегистрироваться</a></p>
+</div>
+</section>
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        
+        <div class="footer__column">
+            <h3>Контакты</h3>
+            <p class="footer__contact">
+                Телефон: <a href="tel:88009995599">8-800-999-55-99</a><br>
+                E-mail: <a href="mailto:best@games.ru">best@games.ru</a>
+            </p>
+        </div>
+
+        <div class="footer__column">
+            <h3>Клиентам</h3>
+            <a href="#">Помощь и поддержка</a>
+            <a href="#">Часто задаваемые вопросы</a>
+            <a href="#">Правила возврата</a>
+        </div>
+
+        <div class="footer__column">
+            <h3>Партнёрам</h3>
+            <a href="#">Сотрудничество</a>
+            <a href="#">Разработчикам игр</a>
+            <a href="#">Реклама на платформе</a>
+        </div>
+
+        <div class="footer__column">
+            <h3>О нас</h3>
+            <a href="#">О компании</a>
+            <a href="#">Карьера</a>
+            <a href="#">Новости</a>
+        </div>
+
+        <div class="footer__column">
+            <h3>Навигация</h3>
+            <a href="index.html">Главная</a>
+            <a href="register.html">Регистрация</a>
+            <a href="login.html">Авторизация</a>
+            <a href="profile.html">Личный кабинет</a>
+            <a href="index.html#search">Поиск</a>
+        </div>
+
+    </div>
+
+    <div class="footer__bottom">
+        © 2026 Best Games. Все права защищены.
+    </div>
+</footer>
+</body>
+</html>

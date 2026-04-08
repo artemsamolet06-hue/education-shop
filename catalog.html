@@ -3,116 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Games</title>
+    <title>Best Games — Каталог игр</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-    <div class="header__container">
-        <a href="index.html" class="header__logo">
-            <img src="images/logo.webp" alt="Steam">
-        </a>
-        
-        <input type="checkbox" id="burger-toggle" class="header__burger-checkbox">
-        <label for="burger-toggle" class="header__burger">☰</label>
-        
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li><a href="index.html" class="header__nav-link active">Магазин</a></li>
-                <li><a href="catalog.html" class="header__nav-link">Каталог</a></li>
-                <li><a href="profile.html" class="header__nav-link">Профиль</a></li>
-                <li><a href="admin.html" class="header__nav-link">Админка</a></li>
-                <li><a href="index.html" class="header__nav-link">Поиск</a></li>
-            </ul>
-        </nav>
-        
-        <div class="header__actions" style="display: flex; align-items: center; gap: 12px;">
-            <a href="login.html" class="header__login-btn">Войти</a>
-            <a href="register.html" class="header__register-btn">Создать аккаунт</a>
-            
-            <a href="index_light.html" class="theme-switch" title="Светлая тема">
-                ☀️
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.webp" alt="Best Games">
             </a>
+            
+            <input type="checkbox" id="burger-toggle" class="header__burger-checkbox">
+            <label for="burger-toggle" class="header__burger">☰</label>
+            
+           <nav class="header__nav">
+    <ul class="header__nav-list">
+        <li><a href="index.html" class="header__nav-link">Магазин</a></li>
+        <li><a href="catalog.html" class="header__nav-link active">Каталог</a></li>
+        <li><a href="profile.html" class="header__nav-link">Профиль</a></li>
+        <li><a href="admin.html" class="header__nav-link">Админка</a></li>
+        <li><a href="index.html" class="header__nav-link">Поиск</a></li>
+    </ul>
+</nav>
+            
+            <div class="header__actions">
+                <a href="login.html" class="header__login-btn">Войти</a>
+                <a href="register.html" class="header__register-btn">Создать аккаунт</a>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
     <main>
-        <section class="hero">
-            <div class="hero__content">
-                <h1>Добро пожаловать в Best Games</h1>
-                <p>Тысячи игр. Миллионы игроков. Один аккаунт.</p>
-                <a href="catalog.html" class="hero__btn">Смотреть каталог</a>
-            </div>
-        </section>
-
         <section class="section">
-            <h2 class="section__title">Рекомендуем сегодня</h2>
+            <h2 class="section__title">Каталог игр</h2>
+
             <div class="cards-grid">
                 <div class="card">
                     <div class="card__image"><img src="images/Cyberpunk 2077.jpg" alt="Cyberpunk 2077"></div>
                     <div class="card__body">
                         <div class="card__title">Cyberpunk 2077</div>
-                        <div class="card__info">
-                            <span>1 999 ₽</span>
-                            <span>92%</span>
-                        </div>
+                        <div class="card__info"><span>1999 ₽</span><span>92%</span></div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card__image"><img src="images/Elden Ring.jpg" alt="Elden Ring"></div>
                     <div class="card__body">
                         <div class="card__title">Elden Ring</div>
-                        <div class="card__info">
-                            <span>2 999 ₽</span>
-                            <span>96%</span>
-                        </div>
+                        <div class="card__info"><span>2999 ₽</span><span>96%</span></div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card__image"><img src="images/Baldur's Gate 3.jpg" alt="Baldur's Gate 3"></div>
                     <div class="card__body">
                         <div class="card__title">Baldur's Gate 3</div>
-                        <div class="card__info">
-                            <span>3 499 ₽</span>
-                            <span>98%</span>
-                        </div>
+                        <div class="card__info"><span>3499 ₽</span><span>98%</span></div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card__image"><img src="images/Dota 2.jpg" alt="Dota 2"></div>
-                    <div class="card__body">
-                        <div class="card__title">Dota 2</div>
-                        <div class="card__info">
-                            <span>Бесплатно</span>
-                            <span>88%</span>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="card">
                     <div class="card__image"><img src="images/Counter-Strike 2.jpg" alt="Counter-Strike 2"></div>
                     <div class="card__body">
                         <div class="card__title">Counter-Strike 2</div>
-                        <div class="card__info">
-                            <span>Бесплатно</span>
-                            <span>87%</span>
-                        </div>
+                        <div class="card__info"><span>Бесплатно</span><span>87%</span></div>
                     </div>
                 </div>
-            </div>
-        </section>
-<section class="partners">
-            <h2 class="partners__title">Наши партнёры</h2>
-            <div class="partners__grid">
-                <img src="images/mail-ru-sign-logo.png" alt="Mail.ru" class="partners__logo">
-                <img src="images/max-messenger-sign-logo.png" alt="MAX" class="partners__logo">
-                <img src="images/gosusligi-logo.png" alt="Госуслуги" class="partners__logo">
-                <img src="images/yandex-logo-rus.png" alt="Яндекс" class="partners__logo">
-            </div>
-        </section>
-        <section class="section">
-            <h2 class="section__title">Популярное сейчас</h2>
-            <div class="cards-grid">
+
+                <div class="card">
+                    <div class="card__image"><img src="images/Dota 2.jpg" alt="Dota 2"></div>
+                    <div class="card__body">
+                        <div class="card__title">Dota 2</div>
+                        <div class="card__info"><span>Бесплатно</span><span>88%</span></div>
+                    </div>
+                </div>
+
                 <div class="card">
                     <div class="card__image"><img src="images/The Witcher 3.jpg" alt="The Witcher 3"></div>
                     <div class="card__body">
@@ -120,32 +85,52 @@
                         <div class="card__info"><span>999 ₽</span><span>97%</span></div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card__image"><img src="images/Red Dead Redemption 2.jpg" alt="Red Dead Redemption 2"></div>
                     <div class="card__body">
                         <div class="card__title">Red Dead Redemption 2</div>
-                        <div class="card__info"><span>2 499 ₽</span><span>95%</span></div>
+                        <div class="card__info"><span>2499 ₽</span><span>95%</span></div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card__image"><img src="images/GTA V.jpg" alt="GTA V"></div>
                     <div class="card__body">
                         <div class="card__title">Grand Theft Auto V</div>
-                        <div class="card__info"><span>1 499 ₽</span><span>96%</span></div>
+                        <div class="card__info"><span>1499 ₽</span><span>96%</span></div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card__image"><img src="images/God of War (2018).jpg" alt="God of War"></div>
                     <div class="card__body">
                         <div class="card__title">God of War (2018)</div>
-                        <div class="card__info"><span>1 999 ₽</span><span>94%</span></div>
+                        <div class="card__info"><span>1999 ₽</span><span>94%</span></div>
                     </div>
                 </div>
+
                 <div class="card">
                     <div class="card__image"><img src="images/Hogwarts Legacy.jpg" alt="Hogwarts Legacy"></div>
                     <div class="card__body">
                         <div class="card__title">Hogwarts Legacy</div>
-                        <div class="card__info"><span>2 299 ₽</span><span>93%</span></div>
+                        <div class="card__info"><span>2299 ₽</span><span>93%</span></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image"><img src="images/baldurs_1.jpeg" alt="Baldur's Gate 3"></div>
+                    <div class="card__body">
+                        <div class="card__title">Baldur's Gate 3</div>
+                        <div class="card__info"><span>3499 ₽</span><span>98%</span></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image"><img src="images/baldurs_2.jpg" alt="Baldur's Gate 3"></div>
+                    <div class="card__body">
+                        <div class="card__title">Baldur's Gate 3 — Акт 2</div>
+                        <div class="card__info"><span>DLC</span></div>
                     </div>
                 </div>
             </div>

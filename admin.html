@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Games</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.webp" alt="Best Games">
+            </a>
+            
+            <input type="checkbox" id="burger-toggle" class="header__burger-checkbox">
+            <label for="burger-toggle" class="header__burger">☰</label>
+            
+           <nav class="header__nav">
+    <ul class="header__nav-list">
+        <li><a href="index.html" class="header__nav-link">Магазин</a></li>
+        <li><a href="catalog.html" class="header__nav-link">Каталог</a></li>
+        <li><a href="profile.html" class="header__nav-link">Профиль</a></li>
+        <li><a href="admin.html" class="header__nav-link active">Админка</a></li>
+        <li><a href="index.html" class="header__nav-link">Поиск</a></li>
+    </ul>
+</nav>
+            
+            <div class="header__actions">
+                <a href="login.html" class="header__login-btn">Выйти</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div style="max-width: 1300px; margin: 0 auto; padding: 0 20px;">
+                <h2 class="section__title">Админ-панель</h2>
+
+                <div style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap;">
+                    <a href="#" style="padding: 12px 32px; background: var(--accent-color); color: #fff; text-decoration: none; border-radius: 4px; font-weight: 600;">Пользователи</a>
+                    <a href="#" style="padding: 12px 32px; background: transparent; color: var(--text-color); border: 2px solid var(--accent-color); text-decoration: none; border-radius: 4px; font-weight: 600;">Игры</a>
+                    <a href="#" style="padding: 12px 32px; background: transparent; color: var(--text-color); border: 2px solid var(--accent-color); text-decoration: none; border-radius: 4px; font-weight: 600;">Заказы</a>
+                    <a href="#" style="padding: 12px 32px; background: transparent; color: var(--text-color); border: 2px solid var(--accent-color); text-decoration: none; border-radius: 4px; font-weight: 600;">Статистика</a>
+                </div>
+
+                <h3 style="margin: 0 0 20px 0; color: var(--accent-color);">Пользователи</h3>
+                
+                <div style="background: var(--card-bg); border-radius: 8px; overflow: hidden; margin-bottom: 60px;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: #16202b;">
+                                <th style="padding: 18px 20px; text-align: left; font-weight: 500;">ID</th>
+                                <th style="padding: 18px 20px; text-align: left; font-weight: 500;">Имя пользователя</th>
+                                <th style="padding: 18px 20px; text-align: left; font-weight: 500;">Email</th>
+                                <th style="padding: 18px 20px; text-align: left; font-weight: 500;">Дата регистрации</th>
+                                <th style="padding: 18px 20px; text-align: center; font-weight: 500;">Уровень</th>
+                                <th style="padding: 18px 20px; text-align: center; font-weight: 500;">Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">001</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">Игрок123</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">player123@steam.ru</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">12.03.2025</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color); text-align: center;">47</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color); text-align: center;">
+                                    <button style="background: #ff5555; color: white; border: none; padding: 7px 16px; border-radius: 4px; margin-right: 8px; cursor: pointer;">Бан</button>
+                                    <button style="background: #66c0f4; color: white; border: none; padding: 7px 16px; border-radius: 4px; cursor: pointer;">Редактировать</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">002</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">TestUser42</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">test42@steam.ru</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">05.04.2025</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color); text-align: center;">12</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color); text-align: center;">
+                                    <button style="background: #ff5555; color: white; border: none; padding: 7px 16px; border-radius: 4px; margin-right: 8px; cursor: pointer;">Бан</button>
+                                    <button style="background: #66c0f4; color: white; border: none; padding: 7px 16px; border-radius: 4px; cursor: pointer;">Редактировать</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">003</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">DarkKnight</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">knight@steam.ru</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">18.04.2025</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color); text-align: center;">29</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color); text-align: center;">
+                                    <button style="background: #ff5555; color: white; border: none; padding: 7px 16px; border-radius: 4px; margin-right: 8px; cursor: pointer;">Бан</button>
+                                    <button style="background: #66c0f4; color: white; border: none; padding: 7px 16px; border-radius: 4px; cursor: pointer;">Редактировать</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 style="margin: 0 0 20px 0; color: var(--accent-color);">Управление играми</h3>
+                
+                <div style="background: var(--card-bg); border-radius: 8px; overflow: hidden;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background: #16202b;">
+                                <th style="padding: 18px 20px; text-align: left; font-weight: 500;">Название игры</th>
+                                <th style="padding: 18px 20px; text-align: left; font-weight: 500;">Цена</th>
+                                <th style="padding: 18px 20px; text-align: left; font-weight: 500;">Продажи</th>
+                                <th style="padding: 18px 20px; text-align: center; font-weight: 500;">Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">Cyberpunk 2077</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">1999 ₽</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">124 580</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color); text-align: center;">
+                                    <button style="background: #66c0f4; color: white; border: none; padding: 8px 18px; border-radius: 4px; cursor: pointer;">Редактировать</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">Elden Ring</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">2999 ₽</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">87 320</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color); text-align: center;">
+                                    <button style="background: #66c0f4; color: white; border: none; padding: 8px 18px; border-radius: 4px; cursor: pointer;">Редактировать</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">Baldur's Gate 3</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">3499 ₽</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color);">64 210</td>
+                                <td style="padding: 16px 20px; border-top: 1px solid var(--border-color); text-align: center;">
+                                    <button style="background: #66c0f4; color: white; border: none; padding: 8px 18px; border-radius: 4px; cursor: pointer;">Редактировать</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="footer__container">
+        
+        <div class="footer__column">
+            <h3>Контакты</h3>
+            <p class="footer__contact">
+                Телефон: <a href="tel:88009995599">8-800-999-55-99</a><br>
+                E-mail: <a href="mailto:best@games.ru">best@games.ru</a>
+            </p>
+        </div>
+
+        <div class="footer__column">
+            <h3>Клиентам</h3>
+            <a href="#">Помощь и поддержка</a>
+            <a href="#">Часто задаваемые вопросы</a>
+            <a href="#">Правила возврата</a>
+        </div>
+
+        <div class="footer__column">
+            <h3>Партнёрам</h3>
+            <a href="#">Сотрудничество</a>
+            <a href="#">Разработчикам игр</a>
+            <a href="#">Реклама на платформе</a>
+        </div>
+
+        <div class="footer__column">
+            <h3>О нас</h3>
+            <a href="#">О компании</a>
+            <a href="#">Карьера</a>
+            <a href="#">Новости</a>
+        </div>
+
+        <div class="footer__column">
+            <h3>Навигация</h3>
+            <a href="index.html">Главная</a>
+            <a href="register.html">Регистрация</a>
+            <a href="login.html">Авторизация</a>
+            <a href="profile.html">Личный кабинет</a>
+            <a href="index.html#search">Поиск</a>
+        </div>
+
+    </div>
+
+    <div class="footer__bottom">
+        © 2026 Best Games. Все права защищены.
+    </div>
+</footer>
+</body>
+</html>

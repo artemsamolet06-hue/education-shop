@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam — Главная (светлая тема)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+    <header class="header">
+    <div class="header__container">
+        <a href="index.html" class="header__logo">
+            <img src="images/logo.webp" alt="Steam">
+        </a>
+        
+        <input type="checkbox" id="burger-toggle" class="header__burger-checkbox">
+        <label for="burger-toggle" class="header__burger">☰</label>
+        
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="index.html" class="header__nav-link active" >Магазин</a></li>
+                <li><a href="catalog.html" class="header__nav-link">Каталог</a></li>
+                <li><a href="profile.html" class="header__nav-link">Профиль</a></li>
+                <li><a href="admin.html" class="header__nav-link">Админка</a></li>
+                <li><a href="index_light.html" class="header__nav-link">Поиск</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header__actions" style="display: flex; align-items: center; gap: 12px;">
+            <a href="login.html" class="header__login-btn">Войти</a>
+            <a href="register.html" class="header__register-btn">Создать аккаунт</a>
+            
+            <a href="index.html" class="theme-switch" title="Тёмная тема">
+                🌙
+            </a>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Добро пожаловать в Best Games</h1>
+                <p>Тысячи игр. Миллионы игроков. Один аккаунт.</p>
+                <a href="catalog.html" class="hero__btn">Смотреть каталог</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Рекомендуемые игры</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card__image"><img src="images/Cyberpunk 2077.jpg" alt="Cyberpunk 2077"></div>
+                    <div class="card__body">
+                        <div class="card__title">Cyberpunk 2077</div>
+                        <div class="card__info"><span>1999 ₽</span><span>92%</span></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image"><img src="images/Elden Ring.jpg" alt="Elden Ring"></div>
+                    <div class="card__body">
+                        <div class="card__title">Elden Ring</div>
+                        <div class="card__info"><span>2999 ₽</span><span>96%</span></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image"><img src="images/Baldur's Gate 3.jpg" alt="Baldur's Gate 3"></div>
+                    <div class="card__body">
+                        <div class="card__title">Baldur's Gate 3</div>
+                        <div class="card__info"><span>3499 ₽</span><span>98%</span></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image"><img src="images/The Witcher 3.jpg" alt="The Witcher 3"></div>
+                    <div class="card__body">
+                        <div class="card__title">The Witcher 3: Wild Hunt</div>
+                        <div class="card__info"><span>999 ₽</span><span>97%</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <h2 class="partners__title">Наши партнёры</h2>
+            <div class="partners__grid">
+                <img src="images/steam-sign-logo.png" alt="Steam" class="partners__logo">
+                <img src="images/discord-sign-logo.png" alt="Discord" class="partners__logo">
+                <img src="images/mail-ru-sign-logo.png" alt="Mail.ru" class="partners__logo">
+                <img src="images/max-messenger-sign-logo.png" alt="MAX" class="partners__logo">
+                <img src="images/gosusligi-logo.png" alt="Госуслуги" class="partners__logo">
+                <img src="images/yandex-logo-rus.png" alt="Яндекс" class="partners__logo">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <h3>Контакты</h3>
+                <p class="footer__contact">
+                    Телефон: <a href="tel:88009995599">8-800-999-55-99</a><br>
+                    E-mail: <a href="mailto:best@games.ru">best@games.ru</a>
+                </p>
+            </div>
+            <div class="footer__column">
+                <h3>Клиентам</h3>
+                <a href="#">Помощь и поддержка</a>
+                <a href="#">Часто задаваемые вопросы</a>
+            </div>
+            <div class="footer__column">
+                <h3>Партнёрам</h3>
+                <a href="#">Сотрудничество</a>
+                <a href="#">Разработчикам</a>
+            </div>
+            <div class="footer__column">
+                <h3>О нас</h3>
+                <a href="#">О компании</a>
+            </div>
+            <div class="footer__column">
+                <h3>Навигация</h3>
+                <a href="index.html">Главная</a>
+                <a href="register.html">Регистрация</a>
+                <a href="login.html">Авторизация</a>
+                <a href="profile.html">Личный кабинет</a>
+                <a href="index_light.html#search">Поиск</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            © 2026 Steam-like. Все права защищены.
+        </div>
+    </footer>
+</body>
+</html>
